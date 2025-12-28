@@ -233,6 +233,7 @@ tipo Arch Linux ou Fedora.
 	- TABELAS DEVEM SER USADAS PARA MOSTRAR DADOS
 
 	#border-collapse: collapse; //Faz com que as linhas juntem-se e fiquem como a de uma tabela convenvencional
+	#vertical-align: [middle, top, bottom]; /*Alinhamento vertical da tabelaºººººººººººººººººº*/
 	
 ------------------------------------------------------------------------------------------------
 
