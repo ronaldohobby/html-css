@@ -4,43 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
-    <link rel="stylesheet" href="style.css">
     <style>
-        table, td, th {
-            border: 1px solid black;
-            border-collapse: collapse;
+        body {
+            font-family: Arial, Helvetica, sans-serif;
         }
+
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
-    <h1>Uso de tabelas grandes</h1>
-    <!--
-        ANATOMIA PARA TABELAS GRANDES 
-        TABLE
-            THEAD
-                TR, TD, TH
-            TBODY
-                TR, TD, TH
-            TFOOT
-                TR, TD, TH
-    -->
-
+    <h1>Mesclagem de células</h1>
     <table>
-        <thead>
-            <tr>
-                <th>Estado</th>
-                <th>População</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>São Paulo</td>
-                <td>45 919 049</td>
-            </tr>
-        </tbody>
-        <tfoot>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
 
-        </tfoot>
+        </tr>
+        <tr>
+            <td rowspan="3">D</td>
+            <td>E</td>
+            <td rowspan="2">F</td>
+        </tr>
+        <tr>
+            
+            <td>H</td>
+        </tr>
+        <tr>
+            <td colspan="2">M</td>
+        </tr>
     </table>
 </body>
 </html>
